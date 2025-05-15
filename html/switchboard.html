@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SwitchBoard</title>
+    <link rel="stylesheet" href="../styles/switchBoard.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <div class="header">
+        <a href="#default" class="logo">
+            <img src="../assets/white_logo.png" height="50" width="250" alt="Company Logo">
+        </a>
+        
+        <div class="header-right">
+            <a href="home.html">Home</a>
+            <a href="powerConsump_react.html">PowerMatrix</a>
+            <a href="internetConsump_react.html">InternetMatrix</a>
+            <a href="watchTower.html">WatchTower</a>
+            <a class="active" href="#">SwitchBoard</a>
+            <a href="assistant.html">Home Assistant</a>
+            <a href="location.html">Location</a>
+        </div>
+    </div>
+
+    <nav>
+        <a href="#high">High Power Appliances</a>
+        <a href="#low">Low Power Appliances</a>
+        <a href="dashboard.html" target="_blank">Dashboard</a>
+
+    </nav>
+
+    <div class="page-title">
+        <h1>Switch Board</h1>
+        <p>Manage Your Home, Effortlessly – Control Every Device with a Tap!</p>
+    </div>
+    
+    <br id="high">
+    <div class="container">
+        <div class="section" >
+            <h3>High Power Appliances</h3>
+            <div id="high-power-list" class="appliance-list"></div>
+        </div>
+        <br id="low"><br>
+        <div class="section" >
+            <h3>Low Power Appliances</h3>
+            <div id="low-power-list" class="appliance-list"></div>
+        </div>
+        
+        <div class="summary" id="power-summary"></div>
+    </div>
+
+    <br><br>
+
+    <footer>
+        <p>&copy; 2025 WebPage. No Rights Reserved</p>
+        <p><b>Developed by,</b> DomoticDynamos</p>
+    </footer>
+    
+    <script src="../scripts/switchBoard.js"></script>
+</body>
+</html>

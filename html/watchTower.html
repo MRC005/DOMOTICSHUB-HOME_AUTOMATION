@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WatchTower</title>
+    <link rel="stylesheet" href="../styles/watchTower.css">
+    <link rel="icon" type="image/png" href="../assets/favicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+</head>
+<body>
+     <!-- Header -->
+     <div class="header">
+        <a href="#default" class="logo">
+            <img src="../assets/white_logo.png" height="50" width="250" alt="Company Logo">
+        </a>
+        
+        <div class="header-right">
+          <a href="home.html">Home</a>
+          <a href="powerConsump_react.html">PowerMatrix</a>
+          <a href="internetConsump_react.html">InternetMatrix</a>
+          <a class="active" href="#">WatchTower</a>
+          <a href="switchboard.html">SwitchBoard</a>
+          <a href="assistant.html">Home Assisstant</a>
+          <a href="location.html">Location</a>
+        </div>
+    </div>
+
+    <nav>
+        <a href="#outdoor">Outdoor Cameras</a>
+        <a href="#indoor">Indoor Cameras</a>
+    </nav>
+    <main>
+
+        <div class="page-title">
+            <h1>Watch Tower</h1>
+            <p>Stay Vigilant, Stay Secure – Live CCTV Access Anytime, Anywhere!</p>
+        </div>
+
+        <br id="outdoor"><br>
+        <section id="outdoor-cameras">
+            <h2>Outdoor Cameras</h2>
+            <div class="camera-grid"></div>
+        </section>
+        <br id="indoor"><br><br><br>
+        <section id="indoor-cameras">
+            <h2>Indoor Cameras</h2>
+            <div class="camera-grid"></div>
+        </section>
+
+        <br><br><br>
+    </main>
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="modal-title"></h2>
+            <video id="modal-video" controls autoplay muted loop>
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2025 WebPage. No Rights Reserved</p>
+        <p class="developer">
+            <b>Developed by,</b>
+            DomoticDynamos
+        </p>
+    </footer>
+    <script src="../scripts/watchTower.js"></script>
+</body>
+</html>

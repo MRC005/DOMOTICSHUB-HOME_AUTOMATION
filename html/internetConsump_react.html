@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InternetMatrix</title>
+    <link rel="stylesheet" href="../styles/internet.css">
+    <link rel="icon" type="image/png" href="../assets/favicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <div class="header">
+        <a href="#default" class="logo">
+            <img src="../assets/white_logo.png" height="50" width="250" alt="Company Logo">
+        </a>
+        
+        <div class="header-right">
+            <a href="home.html">Home</a>
+            <a href="powerConsump_react.html">PowerMatrix</a>
+            <a class="active" href="#">InternetMatrix</a>
+            <a href="watchTower.html">WatchTower</a>
+            <a href="switchboard.html">SwitchBoard</a>
+            <a href="assistant.html">Home Assisstant</a>
+            <a href="location.html">Location</a>
+          </div>
+    </div>
+
+    <nav>
+        <a href="#real-time">Overall Usage</a>
+        <a href="#devices">Connected Devices</a>
+        <a href="#statistics">Statistics</a>
+    </nav>
+
+    <div class="page-title">
+        <h1>Internet Matrix</h1>
+        <p>Real-Time Insights, Total Control – Unveil Your Home’s Internet Pulse!</p>
+    </div>
+    <main>
+        <!-- Realtime Analytics section -->
+
+        <br id="real-time">
+        <br>
+        <br>
+        <section class="tiles-container">
+            <div class="tile">
+                <h2 style="font-size: 24px;">Overall Network Usage</h2>
+            
+                <div class="consumption-container">
+                    <!-- Total Power -->
+                    <div class="consumption-box">
+                        <p><strong>Upload speeds</strong></p>
+                        <div id="upload_speed"></div>
+                    </div>
+
+                    <div class="consumption-box">
+                        <p><strong>Download speeds</strong></p>
+                        <div id="download_speed"></div>
+                    </div> 
+                </div>
+                <p><strong>Total bandwidth used today:</strong> <span id="bandwidth-used-today">-- MB</span></p>
+                <p><strong>Total bandwidth used this week:</strong> <span id="bandwidth-used-week">-- GB</span></p>
+                <p><strong>Total bandwidth used this month:</strong> <span id="bandwidth-used-month">-- TB</span></p>
+                <p><strong>Total number of connected devices:</strong> <span id="conneted-devices">-- V</span></p>
+                <p><strong>Latency:</strong> <span id="latency">-- ms</span></p>
+            </div>
+        </section>
+
+        <br id="devices">
+        <h2 style="font-size: 24px;">Connected Devices</h2>
+        <section id="device-container" class="device-container"></section> 
+
+        <br id="statistics"><br><br><br>
+        <h2 style="font-size: 24px;">Network Statistics</h2>
+        <section class="statistics-section">
+            <div class="tile">
+                <h2 style="font-size: 24px;">Daily Data Consumption</h2>
+                <canvas class="chart-canvas" id="daily-dist"></canvas>
+            </div>
+            <div class="tile">
+                <h2 style="font-size: 24px;">Weekly Data Consumption</h2>
+                <canvas class="chart-canvas" id="weekly-dist"></canvas>
+            </div>
+            <div class="tile">
+                <h2 style="font-size: 24px;">Monthly Data Consumption</h2>
+                <canvas class="chart-canvas" id="monthly-dist"></canvas>
+            </div>
+            <div class="tile">
+                <h2 style="font-size: 24px;">Connected Device Type</h2>
+                <canvas class="chart-canvas" id="device-type-dist"></canvas>
+            </div>
+        </section>
+
+        
+
+        <!-- Statistics section -->
+        <br><br>
+        <h2 style="font-size: 30px;" id="history">History</h2>
+        <section class="history-section">
+            <button id="download-btn" class="download-button">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 24 24" stroke="currentColor" fill="none">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+                    d="M12 4v12m0 0l-4-4m4 4l4-4m-8 8h8m-8 0H6a2 2 0 01-2-2V7a2 2 0 012-2h3" />
+                </svg>
+                Download History
+              </button>
+              
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 WebPage. No Rights Reserved</p>
+        <p style="font-size: 20px; font-family: Arial, Helvetica, sans-serif;">
+            <b>Developed by,</b> DomoticDynamos
+        </p>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <script src="../scripts/bundles/internetGauges.bundle.js"></script>
+    <script src="../scripts/internet.js"></script>
+
+
+</body>
+</html>

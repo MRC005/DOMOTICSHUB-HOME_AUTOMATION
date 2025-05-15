@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width; initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="powerConsump.css">
+        <link rel="stylesheet" type="text/css" href="guage.css">
+        <link rel="icon" type="image/png" href="/home/jaison/Documents/WebProg_miniProj/favicon.png">
+        <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+        <title>PowerMatrix</title>
+    </head>
+    <body>
+        <!-- Header -->
+        <div class="header">
+            <a href="#default" class="logo">
+                <img src="white_logo.png" height="50" width="250" alt="Company Logo">
+            </a>
+            
+            <div class="header-right">
+                <a href="/home/jaison/Documents/WebProg_miniProj/home/home.html">Home</a>
+                <a class="active" href="#">PowerMatrix</a>
+                <a href="/home/jaison/Documents/WebProg_miniProj/internetMatrix/internet.html">InternetMatrix</a>
+                <a href="/home/jaison/Documents/WebProg_miniProj/watchTower/watchTower.html">WatchTower</a>
+                <a href="/home/jaison/Documents/WebProg_miniProj/switchboard/switchboard.html">SwitchBoard</a>
+                <a href="/home/jaison/Documents/WebProg_miniProj/assistant/assistant.html">Home Assisstant</a>
+                <a href="/home/jaison/Documents/WebProg_miniProj/location/location.html">Location</a>
+              </div>
+        </div>
+
+        <nav>
+            <a href="#real-time">Real-time Analytics</a>
+            <a href="#statistics">Statistics</a>
+            <a href="#history">History</a>
+        </nav>
+
+        <div class="page-title">
+            <h1>Power Matrix</h1>
+            <p>A 360° view of your power usage.</p>
+        </div>
+
+        <main>
+            <!-- Realtime Analytics section -->
+
+            <br id="real-time">
+            <br>
+            <br>
+            <section class="tiles-container">
+                <div class="tile">
+                    <h2 style="font-size: 24px;">Overall Consumption</h2>
+                
+                    <div class="consumption-container">
+                        <!-- Total Power -->
+                        <div class="consumption-box">
+                            <p><strong>Load Percentage:</strong></p>
+                            <p><span id="power-consumption">-- %</span></p>
+                            <div class="box gauge--3">
+                                <div class="mask">
+                                    <div class="semi-circle"></div>
+                                    <div class="semi-circle--mask"></div>
+                                </div>
+                            </div>
+                        </div>
+                
+                        <!-- Current Consumption -->
+                        <div class="consumption-box">
+                            <p><strong>Total Power:</strong></p>
+                            <p><span id="current-consumption">-- </span></p>
+                            <div class="box gauge--3">
+                                <div class="mask">
+                                    <div class="semi-circle"></div>
+                                    <div class="semi-circle--mask"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="consumption-box">
+                            <p><strong>Total Current:</strong></p>
+                            <p><span id="current-consumption">-- A</span></p>
+                            <div class="box gauge--3">
+                                <div class="mask">
+                                    <div class="semi-circle"></div>
+                                    <div class="semi-circle--mask"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        
+                    </div>
+                    <p><strong>Energy Consumption:</strong> <span id="phase1-power">-- kWh</span></p>
+                    <p><strong>Voltage:</strong> <span id="phase1-power">-- V</span></p>
+                    <p><strong>Frequency:</strong> <span id="phase1-power">-- Hz</span></p>
+                    <p><strong>Apparent Power:</strong> <span id="phase1-power">-- VA</span></p>
+                    <p><strong>Reactive Power:</strong> <span id="phase1-power">--  VAR</span></p>
+                    <p><strong>Power Factor:</strong> <span id="phase1-power">-- </span></p>
+                </div>
+                
+                
+    
+                <div class="tile">
+                    <h2 style="font-size: 24px;">Phase 1</h2>
+                    <p><strong>Load:</strong> <span id="phase1-power">-- %</span></p>
+                    <div class="box gauge--3">
+                        <div class="mask">
+                            <div class="semi-circle"></div>
+                            <div class="semi-circle--mask"></div>
+                        </div>
+                    </div>
+                    <p><strong>Power:</strong> <span id="phase1-power">-- W</span></p>
+                    <p><strong>Voltage:</strong> <span id="phase1-voltage">-- V</span></p>
+                    <p><strong>Current:</strong> <span id="phase1-current">-- A</span></p>
+                    <p><strong>Frequency:</strong> <span id="phase1-freq">-- Hz</span></p>
+                    <p><strong>Power Factor:</strong> <span id="phase1-pf">--</span></p>
+                </div>
+    
+                <div class="tile">
+                    <h2 style="font-size: 24px;">Phase 2</h2>
+                    <p><strong>Load:</strong> <span id="phase1-power">-- %</span></p>
+                    <div class="box gauge--3">
+                        <div class="mask">
+                            <div class="semi-circle"></div>
+                            <div class="semi-circle--mask"></div>
+                        </div>
+                    </div>
+                    <p><strong>Power:</strong> <span id="phase1-power">-- W</span></p>
+                    <p><strong>Voltage:</strong> <span id="phase1-voltage">-- V</span></p>
+                    <p><strong>Current:</strong> <span id="phase1-current">-- A</span></p>
+                    <p><strong>Frequency:</strong> <span id="phase1-freq">-- Hz</span></p>
+                    <p><strong>Power Factor:</strong> <span id="phase1-pf">--</span></p>
+                </div>
+    
+                <div class="tile">
+                    <h2 style="font-size: 24px;">Phase 3</h2>
+                    <p><strong>Load:</strong> <span id="phase1-power">-- %</span></p>
+                    <div class="box gauge--3">
+                        <div class="mask">
+                            <div class="semi-circle"></div>
+                            <div class="semi-circle--mask"></div>
+                        </div>
+                    </div>
+                    <p><strong>Power:</strong> <span id="phase1-power">-- W</span></p>
+                    <p><strong>Voltage:</strong> <span id="phase1-voltage">-- V</span></p>
+                    <p><strong>Current:</strong> <span id="phase1-current">-- A</span></p>
+                    <p><strong>Frequency:</strong> <span id="phase1-freq">-- Hz</span></p>
+                    <p><strong>Power Factor:</strong> <span id="phase1-pf">--</span></p>
+                </div>
+            </section>
+
+            <!-- Statistics section -->
+            <br id="statistics"><br><br><br>
+            <section class="statistics-section">
+                <div class="tile">
+                    <h2 style="font-size: 24px;">Overall Load Distribution (%)</h2>
+                    <canvas class="chart-canvas" id="load-dist"></canvas>
+                </div>
+                <div class="tile">
+                    <h2 style="font-size: 24px;">Overall Power Consumption (kW)</h2>
+                    <canvas class="chart-canvas" id="power-dist"></canvas>
+                </div>
+                <div class="tile">
+                    <h2 style="font-size: 24px;">Overall Current Consumption (A)</h2>
+                    <canvas class="chart-canvas" id="current-dist"></canvas>
+                </div>
+                <div class="tile">
+                    <h2 style="font-size: 24px;">Overall Voltages Levels (VAC)</h2>
+                    <canvas class="chart-canvas" id="voltage-dist"></canvas>
+                </div>
+                <div class="tile">
+                    <h2 style="font-size: 24px; text-align: left;">Phase 1</h2>
+                    <div class="phase-charts">
+                        <canvas class="chart-canvas" id="p1-v"></canvas>
+                        <canvas class="chart-canvas" id="p1-c"></canvas>
+                        <canvas class="chart-canvas" id="p1-p"></canvas>
+                        <canvas class="chart-canvas" id="p1-f"></canvas>
+                    </div>
+                </div>
+                <div class="tile">
+                    <h2 style="font-size: 24px; text-align: left;">Phase 2</h2>
+                    <div class="phase-charts">
+                        <canvas class="chart-canvas" id="p2-v"></canvas>
+                        <canvas class="chart-canvas" id="p2-c"></canvas>
+                        <canvas class="chart-canvas" id="p2-p"></canvas>
+                        <canvas class="chart-canvas" id="p2-f"></canvas>
+                    </div>
+                </div>
+                <div class="tile">
+                    <h2 style="font-size: 24px; text-align: left;">Phase 3</h2>
+                    <div class="phase-charts">
+                        <canvas class="chart-canvas" id="p3-v"></canvas>
+                        <canvas class="chart-canvas" id="p3-c"></canvas>
+                        <canvas class="chart-canvas" id="p3-p"></canvas>
+                        <canvas class="chart-canvas" id="p3-f"></canvas>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Statistics section -->
+            <br><br>
+            <h2 style="font-size: 30px;" id="history">History</h2>
+            <section class="history-section">
+                <button id="download-btn" class="download-button">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 24 24" stroke="currentColor" fill="none">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+                        d="M12 4v12m0 0l-4-4m4 4l4-4m-8 8h8m-8 0H6a2 2 0 01-2-2V7a2 2 0 012-2h3" />
+                    </svg>
+                    Download History
+                  </button>
+                  
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2025 WebPage. No Rights Reserved</p>
+            <p style="font-size: 20px; font-family: Arial, Helvetica, sans-serif;">
+                <b>Developed by,</b> DomoticDynamos
+            </p>
+        </footer>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+        <script src="script.js"></script>
+        <script src="guage.js"></script>
+        <script src="charts.js"></script>
+    </body>
+</html>

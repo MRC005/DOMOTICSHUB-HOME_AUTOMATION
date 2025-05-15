@@ -1,0 +1,168 @@
+<!--
+    Create a form as given below to apply for a 
+    bank account creation using different form elements. 
+    Use inline, internal and external CSS methods appropriately.
+-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width; initial-scale=1.0">
+        <title>Create Account</title>
+        <style>
+            body{
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                margin: 0;
+                padding: 0;
+                background-color: aliceblue;
+            }
+
+            header{
+                color: aliceblue;
+                background-color: #001233;
+                text-align: center;
+                padding: 20px 10px;
+            }
+
+
+            nav{
+                padding: 10px;
+                text-align: center;
+                padding: 10px;
+                background-color: #33415c;
+            }
+
+            nav a{
+                color: aliceblue;
+                text-decoration: none;
+                margin: 0 10px;
+                font-weight: bold;
+            }
+
+            nav a:hover{
+                color: #fcecc7;
+            }
+
+            .content{
+                max-width: 1200px;
+                margin: 20px auto;
+                padding: 20px;
+                background-color: #fcecc7;
+                box-shadow: 0 2px 5px ;
+                border-radius: 5px;
+                text-align: center; /* Center the form inside */
+            }
+
+            input[type="text"], input[type="date"], 
+            input[type="tel"], input[type="email"],
+            input[type="number"], input[type="password"]
+            {
+                width: 40%;
+                padding: 12px 20px;
+                margin: 10px 20px;
+                display: inline-block;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                box-sizing: border-box;
+            }
+
+            button{
+                width: 40%;
+                background-color: #33415c;
+                color: aliceblue;
+                font-weight: bold;
+                border: none;
+                padding: 20px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                margin: 10px 20px;
+                cursor: pointer;
+            }
+
+            .button1{
+                border-radius: 50px;
+            }
+
+            .imp-p{
+                font-size: 26px;
+            }
+
+            footer{
+                background-color: #001233;
+                padding: 10px;
+                color: aliceblue;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Create Account</h1>
+            <p style="font-size: larger;">Please fill the following details to create your Bank Account</p>
+        </header>
+
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">My Accounts</a>
+            <a href="#">Delete Account</a>
+            <a href="#">Profile</a>
+            <a href="#">Contact Us</a>
+        </nav>
+
+        <div class="content">
+            <p class="imp-p">Enter details to start your savings journey now!</p>
+            <form>
+                <input type="tel" placeholder="Aadhaar linked mobile">
+                <input type="date" placeholder="Date of Birth">
+                <input type="email" placeholder="Email address">
+                <input type="password" placeholder="Permanent Account Number (PAN)">
+                <input type="password" placeholder="12-digit Aadhaar number">
+                <button class="button button1">Get OTP To Verify Aadhaar</button>
+            </form>
+            <p class="imp-p">Please enter your <b>professional & personal details</b></p>
+            <form>
+                <input type="text" placeholder="Occupation">
+                <input type="text" placeholder="Source of income">
+                <input type="number" placeholder="Gross annual income in Rupees(₹)">
+                <input type="text" placeholder="Mother's full name (e.g. Lata Singh)">
+            </form>
+            <p class="imp-p">Select your <b>product</b></p>
+            <form>
+                <input type="radio" id="op1" name="product">
+                <label for="op1">Savings Account</label>
+                <input type="radio" id="op2" name="product">
+                <label for="op2">Current Account</label>
+                <input type="radio" id="op3" name="product">
+                <label for="op3">Fixed Deposit Account</label>
+            </form>
+            <p><b>Each product gives you:</b> Up to 7.25% p.a. interest,
+                Monthly interest credit, and
+                Zero Charges on all services</p>
+
+            <p class="imp-p"><b>You want to add a Nominee?</b></p>
+            <form>
+                <input type="radio" id="yes" name="nominee">
+                <label for="yes">Yes, Add nominee</label>
+                <input type="radio" id="no" name="nominee">
+                <label for="no">No, I do not wich to nominate anyone</label>
+                <br><br><br><br>
+                <input type="checkbox" id="accept">
+                <label for="accept">I accept all <b>terms & conditions</b></label><br>
+                <button class="button button1">Proceed to open account</button>
+            </form>
+        </div>
+
+        <footer>
+            <p>&copy; 2025 Bank. No Rights Reserved</p>
+            <p style="font-size: 20px; font-family: Arial, Helvetica, sans-serif;">
+                <b>Developed by,</b>
+                Jaison Edward B [23BAI0094]
+            </p>
+        </footer>
+        
+    </body>
+</html>
+
