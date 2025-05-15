@@ -61,5 +61,9 @@ Jaison (23BAI0094)
 Jathin (23BDS0008)
 Special thanks to all resources and libraries that made this project possible.
 
+Documentation
 
+For detailed documentation, see Project Description PDF
+
+https://github.com/MRC005/DOMOTICSHUB-HOME_AUTOMATION/blob/main/DomoticsHub-PPT%20(1).pdf#:~:text=DomoticsHub%2DPPT%20(1)-,.pdf
 
