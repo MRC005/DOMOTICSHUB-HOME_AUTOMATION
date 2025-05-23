@@ -8,6 +8,8 @@ Developed by DomoticDynamos
 Jaison [23BAI0094], Machum [23BCE0287], Jathin [23BDS0008]  
 February 2025
 
+DIRECT_LINK:https://mrc005.github.io/DOMOTICSHUB-HOME_AUTOMATION/
+
 ---
 
 ## Overview
